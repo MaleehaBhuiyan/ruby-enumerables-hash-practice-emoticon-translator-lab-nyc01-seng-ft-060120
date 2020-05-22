@@ -20,7 +20,7 @@ end
 def get_japanese_emoticon(file, japanese_emoticon)
   outter_most_hash = load_library(file)
   outter_most_hash.each do |english_word, symbol_pair|
-    symbol_pair.each do |symbol|
+    
       
       binding.pry
 end
