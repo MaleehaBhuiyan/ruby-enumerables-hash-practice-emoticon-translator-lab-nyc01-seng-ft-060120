@@ -36,7 +36,7 @@ def get_english_meaning(file, emoticon)
   outter_most_hash = load_library(file)
 
 end
-=end 
+=end
 
 require 'yaml'
 # require modules here
