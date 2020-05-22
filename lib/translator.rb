@@ -34,5 +34,15 @@ end
 
 def get_english_meaning(file, japanese_emoticon)
   outter_most_hash = load_library(file)
-  
+  reponse = nil
+  outter_most_hash.each do |english_word, symbol_pair|
+    if japanese_emoticon == symbol_pair[:japanese]
+      response = symbol_pair[:english]
+    end
+  end
+  if response == nil
+    return "Sorry, that emoticon was not found"
+  else
+    return response
+  end
 end
