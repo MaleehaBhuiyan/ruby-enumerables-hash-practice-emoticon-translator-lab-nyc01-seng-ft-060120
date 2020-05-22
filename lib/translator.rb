@@ -38,7 +38,6 @@ def get_english_meaning(file, japanese_emoticon)
   outter_most_hash.each do |english_word, symbol_pair|
     if japanese_emoticon == symbol_pair[:japanese]
       response = english_word
-      binding.pry
     end
   end
   if response == nil
