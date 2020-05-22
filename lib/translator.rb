@@ -22,7 +22,7 @@ def get_japanese_emoticon(file, english_emoticon)
   response = nil
   outter_most_hash.each do |english_word, symbol_pair|
     if english_emoticon == symbol_pair[:english]
-      binding.pry
+      #binding.pry
       response = symbol_pair[:japanese]
     end
   end
