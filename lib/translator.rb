@@ -22,7 +22,7 @@ def get_japanese_emoticon(file, japanese_emoticon)
   response = nil
   outter_most_hash[english_word].each do |english, japanese|
     if japanese_emoticon == english
-      response = japanese
+      response = english_word
     end
   end
   if response == nil
