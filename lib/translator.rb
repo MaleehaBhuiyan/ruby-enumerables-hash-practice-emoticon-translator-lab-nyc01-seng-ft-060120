@@ -21,8 +21,8 @@ def get_japanese_emoticon(file, english_emoticon)
   outter_most_hash = load_library(file)
   response = nil
   outter_most_hash.each do |english_word, symbol_pair|
-    binding.pry 
-    if japanese_emoticon == symbol_pair
+    if japanese_emoticon == symbol_pair[:english]
+      binding.pry 
       response = english_word
     end
   end
