@@ -49,8 +49,9 @@ def load_library(path)
   emoticon_hash["get_meaning"] = Hash.new
 
   emoticons.each do |english_word, emoticon_set|
-    emoticon_hash["get_emoticon"][:english] = :japanese
-    emoticon_hash["get_meaning"][:japanese] = english_word
+    emoticon_set = {:english => emoticon_set.first, :japanese => emoticon_set.last}
+    emoticon_hash["get_emoticon"][emoticon_set.first] = emoticon_set.last
+    emoticon_hash["get_meaning"][emoticon_set.last] = english_word
     binding.pry
   end
   emoticon_hash
