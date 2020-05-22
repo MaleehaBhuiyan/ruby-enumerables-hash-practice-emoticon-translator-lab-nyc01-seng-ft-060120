@@ -22,8 +22,7 @@ def get_japanese_emoticon(file, japanese_emoticon)
   outter_most_hash.each do |english_word, symbol_pair|
     symbol_pair.each do |symbol|
       if japanese_emoticon == outter_most_hash[english_word][:japanese] = symbol_pair[1]
-      
-  binding.pry
+      binding.pry
 end
 end
 end
