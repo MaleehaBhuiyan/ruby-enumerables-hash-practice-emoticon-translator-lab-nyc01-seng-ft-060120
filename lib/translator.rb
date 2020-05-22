@@ -31,6 +31,7 @@ def get_japanese_emoticon(file, japanese_emoticon)
     return response
   end
 end
+binding.pry
 
 
 def get_english_meaning(file, emoticon)
