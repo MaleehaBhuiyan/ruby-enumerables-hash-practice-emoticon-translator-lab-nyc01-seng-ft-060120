@@ -19,6 +19,7 @@ end
 
 def get_japanese_emoticon(file, japanese_emoticon)
   outter_most_hash = load_library(file)
+  outter_most_hash
   binding.pry
 
 end
