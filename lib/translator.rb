@@ -23,6 +23,7 @@ def get_japanese_emoticon(file, japanese_emoticon)
     symbol_pair.each do |symbol|
   binding.pry
 end
+end
 
 end
 
