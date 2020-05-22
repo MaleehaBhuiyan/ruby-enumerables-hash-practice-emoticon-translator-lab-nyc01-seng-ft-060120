@@ -27,7 +27,6 @@ end
 end
 end
 
-end
 
 def get_english_meaning(file, emoticon)
   outter_most_hash = load_library(file)
